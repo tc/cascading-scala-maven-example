@@ -1,0 +1,25 @@
+Cascading Scala Maven Example
+tommy@chheng.com
+-
+This is a sample project to help you get started with Cascading using Scala and Maven.
+
+To get started, you can clone this project:
+git clone git@github.com/tc/cascading-scala-maven-example.git
+
+To build a JAR file to use with a hadoop cluster, type:
+mvn package
+
+Download cascading from http://cascading.org
+In the root folder, there should be a cascading-core-X.X.X.jar and a cascading-xmlX.X.X.jar in the lib folder. 
+
+Install these into your local maven repo.
+mvn install:install-file -DgroupId=cascading -DartifactId=cascading-core -Dversion=1.1.2 -Dpackaging=jar -Dfile=cascading-core-1.1.2.jar
+mvn install:install-file -DgroupId=cascading -DartifactId=cascading-xml -Dversion=1.1.2 -Dpackaging=jar -Dfile=cascading-xml-1.1.2.jar
+
+Other dependencies to install from the cascading lib folder:
+mvn install:install-file -DgroupId=org.jgrapht -DartifactId=jgrapht -Dversion=0.8.1 -Dpackaging=jar -Dfile=jgrapht-jdk1.6.jar
+
+Download hadoop and install hadoop into your local maven repo as well.
+mvn install:install-file -DgroupId=org.apache.hadoop -DartifactId=hadoop-core -Dversion=0.20.2 -Dpackaging=jar -Dfile=hadoop-core-0.20.2.jar
+
+

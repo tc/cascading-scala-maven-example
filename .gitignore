@@ -1,0 +1,11 @@
+test/resources/output
+.DS_Store
+*.iml
+*.ipr
+*.iws
+.*~
+dist
+build
+target
+*.class
+
