@@ -1,10 +1,12 @@
 Cascading Scala Maven Example
-tommy@chheng.com
+Twitter: @tommychheng
+Website: http://tommy.chheng.com
+
 -
 This is a sample project to help you get started with Cascading using Scala and Maven.
 
 To get started, you can clone this project:
-git clone git@github.com/tc/cascading-scala-maven-example.git
+git clone http://github.com/tc/cascading-scala-maven-example.git
 
 Install Cascading Jars:
 ---
