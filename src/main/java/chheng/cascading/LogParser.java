@@ -1,4 +1,4 @@
-package com.chheng.cascading;
+package chheng.cascading;
 
 import java.util.Properties;
 

@@ -1,4 +1,4 @@
-test/resources/output
+src/test/resources/output
 .DS_Store
 *.iml
 *.ipr

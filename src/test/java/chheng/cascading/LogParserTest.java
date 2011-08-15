@@ -1,4 +1,4 @@
-package com.chheng.cascading;
+package chheng.cascading;
 
 import org.junit.Test;
 
@@ -11,7 +11,7 @@ public class LogParserTest {
 
     @Test
     public void testMain(){
-        String[] args = new String[]{"src/test/resources/apache.10.txt",
+        String[] args = new String[]{"src/test/resources/input/apache.10.txt",
                                      "src/test/resources/output"};
         LogParser.main(args);
     }

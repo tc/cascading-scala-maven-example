@@ -1,4 +1,4 @@
-package com.chheng.cascading
+package chheng.cascading
 
 import org.junit.Test
 
@@ -15,8 +15,8 @@ class PipeExamplesTest{
 
   @Test
   def testExamples{
-    val input1 = "src/test/resources/pipe_examples_file1.txt"
-    val input2 = "src/test/resources/pipe_examples_file2.txt"
+    val input1 = "src/test/resources/input/pipe_examples_file1.txt"
+    val input2 = "src/test/resources/input/pipe_examples_file2.txt"
     val output = "src/test/resources/output"
 
     PipeExamples.main(Array(input1, input2, output))
