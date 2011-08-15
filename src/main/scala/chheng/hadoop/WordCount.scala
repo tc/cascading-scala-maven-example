@@ -20,9 +20,9 @@ class TokenizerMapper extends Mapper[Object,Text,Text,IntWritable] {
   val word = new Text
 
   override def map(key:Object,
-          value:Text, 
-          context:Mapper[Object,Text,Text,IntWritable]#Context) = {
-      value.toString().split("\\s+").map{ t =>
+                   value:Text, 
+                   context:Mapper[Object, Text, Text, IntWritable]#Context) = {
+    value.toString().split("\\s+").map{ t =>
       word.set(t)
       context.write(word, one)
     }
@@ -32,8 +32,8 @@ class TokenizerMapper extends Mapper[Object,Text,Text,IntWritable] {
 class IntSumReducer extends Reducer[Text,IntWritable,Text,IntWritable] {
 
   override def reduce(key:Text,
-             values:java.lang.Iterable[IntWritable], 
-             context:Reducer[Text,IntWritable,Text,IntWritable]#Context) = {
+                      values:java.lang.Iterable[IntWritable], 
+                      context:Reducer[Text, IntWritable, Text, IntWritable]#Context) = {
 
     val sum = values.foldLeft(0) { (t,i) => t + i.get }
     context.write(key, new IntWritable(sum))
